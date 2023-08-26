@@ -12,6 +12,10 @@ const log = require('fancy-log');
 const colors = require('ansi-colors');
 const rename = require('gulp-rename');
 
+// add new js code here
+// 26/08/2023
+
+
 module.exports = (conf, srcGlob) => {
   // Build CSS
   // -------------------------------------------------------------------------------
