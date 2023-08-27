@@ -116,3 +116,18 @@ let menu, animate;
   // Auto update menu collapsed/expanded based on the themeConfig
   window.Helpers.setCollapsed(true, false);
 })();
+
+// script.js
+const viewBadgesLink = document.getElementById("viewBadges");
+const popup = document.getElementById("popup");
+const closePopupButton = document.getElementById("closePopup");
+
+viewBadgesLink.addEventListener("click", () => {
+  popup.style.display = "flex";
+});
+
+closePopupButton.addEventListener("click", () => {
+  popup.style.display = "none";
+});
+
+
