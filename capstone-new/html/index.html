@@ -20,7 +20,7 @@
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+    <!-- <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" /> -->
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,7 +40,7 @@
 
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
 
     <!-- Page CSS -->
@@ -59,7 +59,7 @@
         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
           <div class="app-brand demo">
             <a href="index.html" class="app-brand-link">
-              <span class="app-brand-text demo menu-text fw-bolder ms-2"> NFT Hydroponics</span>
+              <i class="fas fa-tint"></i> <span class="app-brand-text demo menu-text fw-bolder ms-2"> Hydroponics</span>
             </a>
 
             <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -214,7 +214,7 @@
                 <li class="nav-item navbar-dropdown dropdown-user dropdown">
                   <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                     <div class="avatar avatar-online">
-                      <img src="../assets/img/avatars/hydroponicslogo.jpeg" alt class="w-px-40 h-auto rounded-circle" />
+                      <img src="../assets/img/avatars/9.png" alt class="w-px-40 h-auto rounded-circle" />
                     </div>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end">
@@ -223,7 +223,7 @@
                         <div class="d-flex">
                           <div class="flex-shrink-0 me-3">
                             <div class="avatar avatar-online">
-                              <img src="../assets/img/avatars/hydroponicslogo.jpeg" alt class="w-px-40 h-auto rounded-circle" />
+                              <img src="../assets/img/avatars/9.png" alt class="w-px-40 h-auto rounded-circle" />
                             </div>
                           </div>
                           <div class="flex-grow-1">
@@ -267,34 +267,9 @@
                           <a href="javascript:;" class="btn btn-sm btn-outline-primary"  id="viewBadges">View Notifications</a>
                           <div class="popup" id="popup">
                             <div class="popup-content">
-                              <h3>Notifications</h3>
-                              <table>
-                                <tr>
-                                  <th>Sensor</th>
-                                  <th>Date</th>
-                                  <th>Readings</th>
-                                  <th>Evaluation</th>
-                                </tr>
-                                <tr>
-                                  <td>Acidity</td>
-                                  <td>10/12/2023</td>
-                                  <td>pH of 10</td>
-                                  <td>Urine</td>
-                                </tr>
-                                <tr>
-                                  <td>Acidity</td>
-                                  <td>10/12/2023</td>
-                                  <td>pH of 10</td>
-                                  <td>Urine</td>
-                                </tr>
-                                <tr>
-                                  <td>Temperature</td>
-                                  <td>10/12/2023</td>
-                                  <td>25</td>
-                                  <td>not normal</td>
-                                </tr>
-                                <!-- Add more rows as needed -->
-                              </table>
+                              <h1>Notifications</h1>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                              </p>
                               <button id="closePopup" class="close-button">Close</button>
                             </div>
                           </div>
@@ -339,8 +314,33 @@
                                 <i class="bx bx-dots-vertical-rounded"></i>
                               </button>
                               <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt3">
-                                <a class="dropdown-item" href="javascript:void(0);">View More</a>
-                                <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                                <a class="dropdown-item" href="javascript:void(0);" id="view-more-flowlink">
+                                    <h3>Water Flow</h3>
+                                    <table>
+                                      <tr>
+                                        <th>Date</th>
+                                        <th>Readings</th>
+                                        <th>Evaluation</th>
+                                      </tr>
+                                      <tr>
+                                        <td>10/12/2023</td>
+                                        <td>10 m</td>
+                                        <td>normal</td>
+                                      </tr>
+                                      <tr>
+                                        <td>10/12/2023</td>
+                                        <td>0</td>
+                                        <td>not normal</td>
+                                      </tr>
+                                      <tr>
+                                        <td>10/12/2023</td>
+                                        <td>10m</td>
+                                        <td>normal</td>
+                                      </tr>
+                                      <!-- Add more rows as needed -->
+                                    </table>
+                                </a>
+                                <!-- <a class="dropdown-item" href="javascript:void(0);">Delete</a> -->
                               </div>
                             </div>
                           </div>
@@ -373,8 +373,33 @@
                                 <i class="bx bx-dots-vertical-rounded"></i>
                               </button>
                               <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt6">
-                                <a class="dropdown-item" href="javascript:void(0);">View More</a>
-                                <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                                <a class="dropdown-item" href="javascript:void(0);">
+                                    <h3>Water Level</h3>
+                                    <table>
+                                      <tr>
+                                        <th>Date</th>
+                                        <th>Readings</th>
+                                        <th>Evaluation</th>
+                                      </tr>
+                                      <tr>
+                                        <td>10/12/2023</td>
+                                        <td>10 m</td>
+                                        <td>normal</td>
+                                      </tr>
+                                      <tr>
+                                        <td>10/12/2023</td>
+                                        <td>0</td>
+                                        <td>not normal</td>
+                                      </tr>
+                                      <tr>
+                                        <td>10/12/2023</td>
+                                        <td>10m</td>
+                                        <td>normal</td>
+                                      </tr>
+                                      <!-- Add more rows as needed -->
+                                    </table>
+                                </a>
+                                <!-- <a class="dropdown-item" href="javascript:void(0);">Delete</a> -->
                               </div>
                             </div>
                           </div>
@@ -450,8 +475,33 @@
                                 <i class="bx bx-dots-vertical-rounded"></i>
                               </button>
                               <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt4">
-                                <a class="dropdown-item" href="javascript:void(0);">View More</a>
-                                <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                                <a class="dropdown-item" href="javascript:void(0);">
+                                    <h3>Acidity</h3>
+                                    <table>
+                                      <tr>
+                                        <th>Date</th>
+                                        <th>Readings</th>
+                                        <th>Evaluation</th>
+                                      </tr>
+                                      <tr>
+                                        <td>10/12/2023</td>
+                                        <td>10 m</td>
+                                        <td>normal</td>
+                                      </tr>
+                                      <tr>
+                                        <td>10/12/2023</td>
+                                        <td>0</td>
+                                        <td>not normal</td>
+                                      </tr>
+                                      <tr>
+                                        <td>10/12/2023</td>
+                                        <td>10m</td>
+                                        <td>normal</td>
+                                      </tr>
+                                      <!-- Add more rows as needed -->
+                                    </table>
+                                </a>
+                                <!-- <a class="dropdown-item" href="javascript:void(0);">Delete</a> -->
                               </div>
                             </div>
                           </div>
@@ -480,8 +530,33 @@
                                 <i class="bx bx-dots-vertical-rounded"></i>
                               </button>
                               <div class="dropdown-menu" aria-labelledby="cardOpt1">
-                                <a class="dropdown-item" href="javascript:void(0);">View More</a>
-                                <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                                <a class="dropdown-item" href="javascript:void(0);">
+                                    <h3>Total Dissolved Solids</h3>
+                                    <table>
+                                      <tr>
+                                        <th>Date</th>
+                                        <th>Readings</th>
+                                        <th>Evaluation</th>
+                                      </tr>
+                                      <tr>
+                                        <td>10/12/2023</td>
+                                        <td>10 m</td>
+                                        <td>normal</td>
+                                      </tr>
+                                      <tr>
+                                        <td>10/12/2023</td>
+                                        <td>0</td>
+                                        <td>not normal</td>
+                                      </tr>
+                                      <tr>
+                                        <td>10/12/2023</td>
+                                        <td>10m</td>
+                                        <td>normal</td>
+                                      </tr>
+                                      <!-- Add more rows as needed -->
+                                    </table>
+                                </a>
+                                <!-- <a class="dropdown-item" href="javascript:void(0);">Delete</a> -->
                               </div>
                             </div>
                           </div>
