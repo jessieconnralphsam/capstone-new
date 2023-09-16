@@ -274,7 +274,7 @@
   // --------------------------------------------------------------------
   const growthChartEl = document.querySelector('#growthChart'),
     growthChartOptions = {
-      series: [90],
+      series: [50],
       labels: ['Water Quality'],
       chart: {
         height: 240,
