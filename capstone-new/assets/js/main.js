@@ -130,4 +130,35 @@ closePopupButton.addEventListener("click", () => {
   popup.style.display = "none";
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  const chartContainer = document.getElementById("chartContainer");
+  const chart1 = document.getElementById("totalRevenueChart");
+  const chart2 = document.getElementById("chart2");
+  const chart3 = document.getElementById("chart3");
+  const flipButton = document.getElementById("flipButton");
+  const headerText = document.querySelector(".card-header");
+
+  // Add an event listener to the button to toggle between charts
+  flipButton.addEventListener("click", function() {
+    if (chart1.style.display === "block") {
+      chart1.style.display = "none";
+      chart2.style.display = "block";
+      chart3.style.display = "none";
+      headerText.textContent = "Water Quality Index (Day)"; // Change header text to "(Day)"
+      flipButton.textContent = "year"; // Change button text to "month"
+    } else if (chart2.style.display === "block") {
+      chart1.style.display = "none";
+      chart2.style.display = "none";
+      chart3.style.display = "block";
+      headerText.textContent = "Water Quality Index (Year)"; // Change header text to "(Year)"
+      flipButton.textContent = "month"; // Change button text to "month"
+    } else {
+      chart1.style.display = "block";
+      chart2.style.display = "none";
+      chart3.style.display = "none";
+      headerText.textContent = "Water Quality Index (Month)"; // Change header text back to "(Month)"
+      flipButton.textContent = "day"; // Change button text back to "day"
+    }
+  });
+});
 

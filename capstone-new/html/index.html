@@ -262,7 +262,7 @@
                         <div class="card-body">
                           <h5 class="card-title text-primary">Hi Username!</h5>
                           <p class="mb-4">
-                            You have  <span class="fw-bold">number</span> notifications today. Check notifications below.
+                            You have  <span class="fw-bold" style="color: red;">2</span> notifications today. Check notifications below.
                           </p>
                           <a href="javascript:;" class="btn btn-sm btn-outline-primary"  id="viewBadges">View Notifications</a>
                           <div class="popup" id="popup">
@@ -416,9 +416,14 @@
                   <div class="card">
                     <div class="row row-bordered g-0">
                       <div class="col-md-8">
-                        <h5 class="card-header m-0 me-2 pb-3">Water Quality Index (WQI)</h5>
-                        <div id="totalRevenueChart" class="px-2"></div>
-                      </div>
+                        <h5 class="card-header m-0 me-2 pb-3">Water Quality Index (Month)</h5>
+                        <div id="chartContainer" class="px-2">
+                          <div id="totalRevenueChart" class="px-2"></div>
+                          <div class="chart" id="chart2" style="display: none;">Chart for day & Content</div>
+                          <div class="chart" id="chart3" style="display: none;">Chart for year & Content</div>
+                        </div>
+                        <button id="flipButton">day</button>
+                      </div>                      
                       <div class="col-md-4">
                         <div id="growthChart"></div>
                         <div class="text-center fw-semibold pt-3 mb-2">Current Water <br> Condition: 50</div>
