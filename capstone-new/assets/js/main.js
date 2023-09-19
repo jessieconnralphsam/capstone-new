@@ -130,13 +130,12 @@ closePopupButton.addEventListener("click", () => {
   popup.style.display = "none";
 });
 
-// Get references to the select element and the chart divs
+
 const monthDropdown = document.getElementById("monthDropdown");
 const totalRevenueChart = document.getElementById("totalRevenueChart");
 const chart2 = document.getElementById("chart2");
 const chart3 = document.getElementById("chart3");
 
-// Add an event listener to the select element
 monthDropdown.addEventListener("change", function () {
   const selectedOption = monthDropdown.value;
 
@@ -145,7 +144,7 @@ monthDropdown.addEventListener("change", function () {
   chart2.style.display = "none";
   chart3.style.display = "none";
 
-  // Show the selected chart based on the value of the dropdown
+
   if (selectedOption === "Month") {
     totalRevenueChart.style.display = "block";
   } else if (selectedOption === "Day") {
