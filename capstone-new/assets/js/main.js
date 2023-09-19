@@ -130,35 +130,29 @@ closePopupButton.addEventListener("click", () => {
   popup.style.display = "none";
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-  const chartContainer = document.getElementById("chartContainer");
-  const chart1 = document.getElementById("totalRevenueChart");
-  const chart2 = document.getElementById("chart2");
-  const chart3 = document.getElementById("chart3");
-  const flipButton = document.getElementById("flipButton");
-  const headerText = document.querySelector(".card-header");
+// Get references to the select element and the chart divs
+const monthDropdown = document.getElementById("monthDropdown");
+const totalRevenueChart = document.getElementById("totalRevenueChart");
+const chart2 = document.getElementById("chart2");
+const chart3 = document.getElementById("chart3");
 
-  // Add an event listener to the button to toggle between charts
-  flipButton.addEventListener("click", function() {
-    if (chart1.style.display === "block") {
-      chart1.style.display = "none";
-      chart2.style.display = "block";
-      chart3.style.display = "none";
-      headerText.textContent = "Water Quality Index (Day)"; // Change header text to "(Day)"
-      flipButton.textContent = "year"; // Change button text to "month"
-    } else if (chart2.style.display === "block") {
-      chart1.style.display = "none";
-      chart2.style.display = "none";
-      chart3.style.display = "block";
-      headerText.textContent = "Water Quality Index (Year)"; // Change header text to "(Year)"
-      flipButton.textContent = "month"; // Change button text to "month"
-    } else {
-      chart1.style.display = "block";
-      chart2.style.display = "none";
-      chart3.style.display = "none";
-      headerText.textContent = "Water Quality Index (Month)"; // Change header text back to "(Month)"
-      flipButton.textContent = "day"; // Change button text back to "day"
-    }
-  });
+// Add an event listener to the select element
+monthDropdown.addEventListener("change", function () {
+  const selectedOption = monthDropdown.value;
+
+  // Hide all charts
+  totalRevenueChart.style.display = "none";
+  chart2.style.display = "none";
+  chart3.style.display = "none";
+
+  // Show the selected chart based on the value of the dropdown
+  if (selectedOption === "Month") {
+    totalRevenueChart.style.display = "block";
+  } else if (selectedOption === "Day") {
+    chart2.style.display = "block";
+  } else if (selectedOption === "Year") {
+    chart3.style.display = "block";
+  }
 });
+
 

@@ -416,13 +416,19 @@
                   <div class="card">
                     <div class="row row-bordered g-0">
                       <div class="col-md-8">
-                        <h5 class="card-header m-0 me-2 pb-3">Water Quality Index (Month)</h5>
+                        <h5 class="card-header m-0 me-2 pb-3">
+                          <label for="monthDropdown">Average Water Condition</label>
+                          <select id="monthDropdown">
+                              <option value="Month">Month</option>
+                              <option value="Day">Day</option>
+                              <option value="Year">Year</option>
+                          </select>
+                        </h5>                 
                         <div id="chartContainer" class="px-2">
                           <div id="totalRevenueChart" class="px-2"></div>
                           <div class="chart" id="chart2" style="display: none;">Chart for day & Content</div>
                           <div class="chart" id="chart3" style="display: none;">Chart for year & Content</div>
                         </div>
-                        <button id="flipButton">day</button>
                       </div>                      
                       <div class="col-md-4">
                         <div id="growthChart"></div>
